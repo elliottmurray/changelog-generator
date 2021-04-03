@@ -1,4 +1,4 @@
-name: 'Get a changelog between two references'
+name: 'Get a changelog between two references elliott'
 author: 'Chad Metcalf'
 description: 'Returns the commit difference count between two git references.'
 inputs:

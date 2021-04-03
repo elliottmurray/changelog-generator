@@ -79,7 +79,7 @@ async function getChangelog(headRef, baseRef, repoName) {
         '\x1b[32m%s\x1b[0m',
         `Changelog between ${baseRef} and ${headRef}:\n${output}`
       )
-      core.setOutput('changelog', output)
+      core.setOutput('changelog', encodeURI(output))
     } else {
       core.setFailed(err)
       process.exit(1)
